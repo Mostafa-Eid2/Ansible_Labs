@@ -1,0 +1,7 @@
+- name: playbook1
+  hosts: all
+  gather_facts: false
+  tasks:
+    - name: Package cache update
+      apt:
+        update_cache: true
